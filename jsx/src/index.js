@@ -7,10 +7,14 @@ const el = document.getElementById("root");
 const root = ReactDOM.createRoot(el);
 //4) Create a component
 function App() {
+  const config = { color: "red" };
   //props
-  const inputType = "number";
-  const minValue = 5;
-  return <input type={inputType} min={minValue} />;
+  return (
+    <div>
+      {/* <h1>{config}</h1> doesn't work */}
+      <input style={{ border: "3px solid red" }} type="number" min={5} />
+    </div>
+  );
 }
 //5) Show the component on the screen
 root.render(<App />);
