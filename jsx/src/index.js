@@ -11,7 +11,7 @@ function App() {
   //props
   return (
     <div>
-      {/* <h1>{config}</h1> doesn't work */}
+      <h1>{JSON.stringify(config)}</h1>
       <input style={{ border: "3px solid red" }} type="number" min={5} />
     </div>
   );
